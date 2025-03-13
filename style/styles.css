@@ -21,7 +21,15 @@ padding: 10px 24px 10px 24px;
 /* header-section */
 .header{
     background-color: rgb(11, 0, 0);
-    padding: 20px;
+    overflow: hidden;
+    padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+    
+   
 }
 .container{
     display:flex;
@@ -89,13 +97,13 @@ padding: 10px 24px 10px 24px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    top:30px;
+    top:80px;
 }
 .banner-text{
     max-width:540px;
     /* border: 2px blue solid; */
     align-content: center;
-
+    padding: 20px;
     
 }
 .banner-text h1{
@@ -120,7 +128,7 @@ font-weight: 700;
 line-height: 24px;
 border: none;
 position: relative;
-top: 5%;
+top: 30px;
 }
 .banner-text button:hover{
     background-color: black;
@@ -143,7 +151,7 @@ top: 5%;
     margin: 0 auto;
     /* border: 2px solid black; */
     position: relative;
-    top: 5rem;
+    top: 7rem;
     display: flex;
     flex-wrap: wrap;  
     justify-content: center;
@@ -215,7 +223,7 @@ border-radius: 16px;
     ;
         justify-content: space-between;
         position: relative;
-        top: 30px;
+        top: 80px;
      
         flex-direction: column-reverse;
     }
@@ -268,7 +276,7 @@ border-radius: 16px;
         margin: 0 auto;
         /* border: 2px solid black; */
         position: relative;
-        top: 5rem;
+        top:105px;
         display: flex
     ;
         flex-wrap: wrap;
