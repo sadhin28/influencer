@@ -154,11 +154,12 @@ top: 5%;
 /* Popular Collection */
 .Popular-Collection{
     max-width: 1047px;
-    height:auto;
-    border: black solid 2px;
+    height:1652px;
+    /* border: black solid 2px; */
     margin: 0 auto;
     position: relative;
-    top: 5rem;
+    top: 8rem;
+    
 }
 .Popular-Collection-card{
     width: 329px;
@@ -167,11 +168,16 @@ height: 476px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
 padding: 2px 16px;
+border-radius: 16px;
+
+
 }
 .Popular-Collection-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .card-image{
+    top: 10px;
+    position:relative;
     width: 300px;
     height: 256px;
     margin: 0 auto;
@@ -188,7 +194,17 @@ padding: 2px 16px;
 .checked {
     color:gold;
   }
- 
+ .Popular-Collection .Popular-Collection-heding{
+    text-align: center;
+ }
+ .conainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    position: relative;
+    top: 30px;
+ }
+ /*  */
 @media screen and (max-width:576px){
    
     /* banner-section */
@@ -200,6 +216,7 @@ padding: 2px 16px;
         justify-content: space-between;
         position: relative;
         top: 30px;
+     
         flex-direction: column-reverse;
     }
     .banner-text {
@@ -260,5 +277,43 @@ padding: 2px 16px;
         padding: auto;
         flex-direction: row-reverse;
     }
+    .conainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 7px;
+        
+     }
+     .Popular-Collection-card{
+        margin: 0 auto;
+        position: relative;
+        top: -10px;
+     }
    
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .conainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
+        
+     }
+     .Popular-Collection-card{
+        margin: 0 auto;
+        position: relative;
+        top: -10px;
+     }
+      .company {
+        max-width: 1140px;
+        height: 110px;
+        margin: 0 auto;
+        /* border: 2px solid black; */
+        position: relative;
+        top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        padding: auto;
+        flex-direction: row-reverse;
+    }
 }
