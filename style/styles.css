@@ -20,16 +20,26 @@ padding: 10px 24px 10px 24px;
 
 /* header-section */
 .header{
-    background-color: rgb(11, 0, 0);
+    background: rgb(224, 44, 109);
     overflow: hidden;
-    padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+    padding: 20px 20px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
     top: 0; /* At the top */
     z-index: 99;
-    
-   
+    box-shadow: 0 4px 8px 0 rgba(13, 2, 2, 0.953); 
+}
+.header a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(29, 46, 62);
+transition: 0.3s;
+    padding:20px;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 }
 .container{
     display:flex;
@@ -47,6 +57,10 @@ padding: 10px 24px 10px 24px;
 .influence-nav a{
     text-decoration: none;
     color: whitesmoke;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 }
 .container h3{
     color: whitesmoke;
@@ -212,7 +226,69 @@ border-radius: 16px;
     position: relative;
     top: 30px;
  }
- /*  */
+ /*read more  */
+ .read-more{
+    max-width: 1047px;
+   margin: 0 auto;
+    /* border: 2px bisque solid; */
+    display: flex;
+    flex-direction: row-reverse;
+    
+ }
+ .read-more a{
+    position: relative;
+    top: 40px;
+   cursor: pointer;
+   text-decoration: none;
+   font-size: 2em;
+   color: rgb(230, 7, 7);
+   display: flex;
+ }
+ /* frature-product */
+ .frature-product{
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    top: 7rem;
+    display:flex;
+    justify-content: space-between;
+    /* border: solid black; */
+ }
+ .frature-product-img{
+   max-width: 540px;
+   /* border: rebeccapurple solid; */
+   
+ }
+ .frature-product-img img{
+    width: 100%;
+    padding: 40px;
+ }
+ .frature-product-text{
+    max-width: 540px;
+   /* border: rgb(153, 131, 51) solid; */
+ }
+ .frature-product-text p{
+   color: rgb(108, 108, 108);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+ }
+ .frature-product button{
+    position: relative;
+    top: 20px;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+    height: 40px;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    background: rgb(224, 44, 109);
+    cursor: pointer;
+ }
+ .frature-product button:hover{
+    background-color: black;
+ }
 @media screen and (max-width:576px){
    
     /* banner-section */
@@ -264,7 +340,7 @@ border-radius: 16px;
     }
     .influence-nav ul{
         margin-top: 12px;
-        border-top: 1px solid rgb(255,255,255,0.6);
+        /* border-top: 1px solid rgb(255,255,255,0.6); */
     }
     .influence-nav ul li{
       display: block;
@@ -296,6 +372,48 @@ border-radius: 16px;
         position: relative;
         top: -10px;
      }
+     .read-more {
+    max-width: 1047px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: 2866px;
+    padding-right: 74px;
+}
+    .read-more a{
+        color: red;
+    }
+    .frature-product {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        /* top: 7rem; */
+        display: flex
+    ;
+        gap: 50px;
+        top: 2916px;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .frature-product-text {
+        /* border: solid black; */
+        padding: 44px;
+        text-align:center;
+        
+    }
+    .frature-product button {
+        position: relative;
+        top: 20px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        height: 40px;
+        width: 30%;
+        color: rgb(255, 255, 255);
+        background: rgb(224, 44, 109);
+        cursor: pointer;
+    }
    
 }
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -324,4 +442,40 @@ border-radius: 16px;
         padding: auto;
         flex-direction: row-reverse;
     }
+    .read-more {
+        max-width: 1047px;
+        margin: 0 auto;
+        display: flex
+    ;
+        flex-direction: row-reverse;
+        position: relative;
+        top: 952px;
+        right: 84px;
+    }
+    .frature-product {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        top: 7rem;
+        display: flex
+;
+        justify-content: space-between;
+        /* border: solid black; */
+        position: relative;
+        top: 1029px;
+
+    }
+    .frature-product-text {
+        max-width: 540px;
+        /* border: rgb(153, 131, 51) solid; */
+        padding: 10px;
+        text-align: justify;
+    }
+    .frature-product-img{
+        max-width: 540px;
+    }
+    .frature-product-img img {
+    width: 100%;
+    padding: 10px;
+}
 }
