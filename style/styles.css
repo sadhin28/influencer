@@ -289,6 +289,58 @@ font-weight: 700;
  .frature-product button:hover{
     background-color: black;
  }
+ footer{
+    height: 200px;
+    max-width: 100%;
+    background: rgb(10, 8, 38);
+    position: relative;
+    top: 150px;
+ }
+ footer h3{
+    color: rgb(255, 255, 255);
+    
+font-family: Poppins;
+font-size: 16px;
+text-align: center;
+position: relative;
+top: 30px;
+ }
+ footer p{
+    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+font-family: Poppins;
+font-size: 10px;
+text-align: center;
+position: relative;
+top: 40px;
+ }
+
+.footer-icon {
+     display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 70px;
+        gap: 40px;
+}
+.footer-icon .icon{
+    align-items: center;
+    padding:10px;
+    max-width:100px;
+    max-height: 100px;
+    border-radius:60px;
+    background-color: rgb(139, 136, 129);
+}
+.footer-icon img{
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+ 
 @media screen and (max-width:576px){
    
     /* banner-section */
@@ -414,6 +466,13 @@ font-weight: 700;
         background: rgb(224, 44, 109);
         cursor: pointer;
     }
+    footer {
+        height: 200px;
+        max-width: 100%;
+        background: rgb(10, 8, 38);
+        position: relative;
+        top: 2900px;
+    }
    
 }
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -477,5 +536,12 @@ font-weight: 700;
     .frature-product-img img {
     width: 100%;
     padding: 10px;
+}
+footer {
+    height: 200px;
+    max-width: 100%;
+    background: rgb(10, 8, 38);
+    position: relative;
+    top: 1069px;
 }
 }
